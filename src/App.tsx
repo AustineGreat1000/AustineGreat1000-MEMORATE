@@ -1783,7 +1783,7 @@ const HomePage = ({ setCurrentPage }: { setCurrentPage: (p: Page) => void }) => 
         <div className="fixed inset-0 opacity-10 pointer-events-none mix-blend-soft-light grain-texture" />
         <div className="container mx-auto px-6 relative z-10 text-center">
            <div className="text-accent mb-12 text-6xl opacity-40 font-serif">“</div>
-           <p className="text-[25px] md:text-[43px] font-display font-light leading-relaxed max-w-5xl mx-auto mb-16 italic text-balance">
+           <p className="text-[23px] md:text-[41px] font-display font-light leading-relaxed max-w-5xl mx-auto mb-16 italic text-balance">
               "Your business is spending money on marketing and brand communication, and you're still not getting any real result. The issue is that your marketing and brand were never built to deliver measurable revenue-linked value."
            </p>
            <div className="flex flex-col items-center gap-4">
@@ -1821,8 +1821,8 @@ const HomePage = ({ setCurrentPage }: { setCurrentPage: (p: Page) => void }) => 
           <div className="mt-8 mb-20 grid lg:grid-cols-12 gap-8 items-start">
             <div className="lg:col-span-5 text-xl text-slate-300 font-light leading-relaxed">
               Every organisation wants stronger visibility, trust and growth. But most growth problems do not start with a lack of activity.
-              <span className="block mt-4 text-[#AAFF00] font-medium italic border-l-2 border-acid-green pl-4">
-                They start when value begins to leak.
+              <span className="block mt-4 text-lg text-[#AAFF00] font-medium italic border-l-2 border-acid-green pl-4">
+                They start with poor design, lack of organic strategy, and poor execution.
               </span>
             </div>
             <div className="lg:col-span-7 text-sm text-slate-400 font-light leading-relaxed space-y-4">
@@ -4289,12 +4289,7 @@ const ContactPage = ({ setCurrentPage }: { setCurrentPage: (p: Page) => void }) 
       <div className="container mx-auto px-6 max-w-2xl">
         {/* Header Block with Premium Typography */}
         <div className="mb-14 border-b border-white/10 pb-12">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-2 h-2 rounded-full bg-acid-green border border-white shadow-[0_0_8px_rgba(170,255,0,0.8)]" />
-            <span className="text-[10px] font-mono tracking-[0.34em] uppercase text-slate-450 font-bold">
-              Transmission Protocol
-            </span>
-          </div>
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium mb-6 leading-[1.05] tracking-tight text-white">
             Let's talk about your business.
           </h1>
@@ -4333,42 +4328,7 @@ const ContactPage = ({ setCurrentPage }: { setCurrentPage: (p: Page) => void }) 
           </div>
         </div>
 
-        {/* Structured Timeline Steps */}
-        <div className="mb-14">
-          <h3 className="text-[10px] font-mono text-slate-500 uppercase tracking-widest mb-6 pb-3 border-b border-white/10">
-            Our Response Protocol
-          </h3>
-          <div className="space-y-4">
-            {[
-              {
-                title: "Deep Analysis",
-                desc: "We read every note carefully. A real strategist audits your company and category to formulate a preliminary thesis, avoiding standard sales talk."
-              },
-              {
-                title: "48-Hour Response",
-                desc: "We deliver a specific, actionable perspective on your situation via email, complete with our immediate strategic thoughts and feedback."
-              },
-              {
-                title: "The Discovery Session",
-                desc: "If there is core structural alignment, we host a 30-minute diagnostic exchange. No slide decks, no standard pitches—just tailored questions."
-              },
-              {
-                title: "Custom Roadmap",
-                desc: "We align on a collaborative engagement model built strictly around your organization's timelines, objectives, and brand readiness."
-              }
-            ].map((step, i) => (
-              <div key={i} className="flex gap-4 items-start bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/[0.08] transition-all duration-300">
-                <span className="text-sm font-mono font-bold text-black bg-acid-green w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
-                  0{i+1}
-                </span>
-                <div className="space-y-1">
-                  <h4 className="font-display font-bold text-white text-sm">{step.title}</h4>
-                  <p className="text-xs text-slate-400 font-light leading-relaxed">{step.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+
 
         {/* The Clean Form Column */}
         <div id="contact-form" className="relative">
